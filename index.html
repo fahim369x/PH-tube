@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+
+    <!-- daisy and tailwind -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .font-style {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
+  </head>
+  <body
+    class="max-w-[1230px] p-3 lg:px-7 mx-auto mb-3 md-16 lg:mb-24 font-style"
+  >
+    <header>
+      <nav>
+        <!-- nav -->
+        <div class="flex justify-between items-center mb-5 mx-auto">
+          <img class="w-20 md:w-28" src="./Logo.png" alt="" />
+          <button id="sort-btn" class="btn px-2 md:px-6">Sort by view</button>
+          <button
+            onclick="openBlogPage()"
+            class="bg-[#FF1F3D] py-2 rounded-lg text-white px-4"
+          >
+            Blog
+          </button>
+        </div>
+        <hr />
+      </nav>
+    </header>
+    <main>
+      <!-- Dynamic buttons -->
+      <div
+        id="button-container"
+        class="flex justify-center space-x-3 md:gap-4 items-center mx-auto mt-5"
+      ></div>
+      <!-- dynamic cards -->
+      <section
+        id="card-container"
+        class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-5 space-x-5 space-y-7 mx-auto"
+      ></section>
+    </main>
+    <!-- js -->
+    <script src="./index.js"></script>
+  </body>
+</html>
